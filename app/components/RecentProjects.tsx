@@ -2,6 +2,7 @@ import { projects } from '@/data'
 import React from 'react'
 import { PinContainer } from './ui/3d-pin'
 import { FaLocationArrow } from 'react-icons/fa'
+import { MagicButton } from './ui/MagicButton'
 
 export const RecentProjects = () => {
   return (
@@ -9,6 +10,10 @@ export const RecentProjects = () => {
         <h1 className='heading'>
             A small selection of {' '}
             <span className='text-purple'>recent Projects</span>
+            <br />
+            <a href="https://github.com/samarsrivastav">
+                <MagicButton title='More Projects' icon={<FaLocationArrow/>} position="right"/>
+            </a>
         </h1>
         <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
             
